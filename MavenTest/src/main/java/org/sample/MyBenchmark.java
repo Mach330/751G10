@@ -41,21 +41,31 @@ import static java.util.Arrays.stream;
 
 public class MyBenchmark {
 
+    public int getRandom(){
+        Random rand = new Random();
+
+        return rand.nextInt();
+    }
+
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     public void testMethod1() {
 
-        int iValue = 10000;
+        int iValue = 20000;
         int jValue = 1000;
 
         int array1[][] = new int[iValue][jValue];
+        int random = getRandom();
 
         int[][] doubled2D =
 
         Arrays.stream(array1)//.parallel()
                 .map(x -> Arrays.stream(x)//.parallel()
                         .map(y -> {
-                            y = 24;
+                            y = random;
+                            y = (int) Math.sqrt((y)*6);
+                            y = (int) Math.sqrt((y)*6);
+                            y = (int) Math.sqrt((y)*6);
                             return 2 * (y+1);
                         })
                         .toArray())
@@ -67,17 +77,20 @@ public class MyBenchmark {
     @BenchmarkMode(Mode.Throughput)
     public void testMethod2() {
 
-        int iValue = 10000;
+        int iValue = 20000;
         int jValue = 1000;
 
         int array1[][] = new int[iValue][jValue];
-
+        int random = getRandom();
         int[][] doubled2D =
 
                 Arrays.stream(array1).parallel()
                         .map(x -> Arrays.stream(x)//.parallel()
                                 .map(y -> {
-                                    y = 24;
+                                    y = random;
+                                    y = (int) Math.sqrt((y)*6);
+                                    y = (int) Math.sqrt((y)*6);
+                                    y = (int) Math.sqrt((y)*6);
                                     return 2 * (y+1);
                                 })
                                 .toArray())
@@ -89,17 +102,20 @@ public class MyBenchmark {
     @BenchmarkMode(Mode.Throughput)
     public void testMethod3() {
 
-        int iValue = 10000;
+        int iValue = 20000;
         int jValue = 1000;
 
         int array1[][] = new int[iValue][jValue];
-
+        int random = getRandom();
         int[][] doubled2D =
 
                 Arrays.stream(array1)//.parallel()
                         .map(x -> Arrays.stream(x).parallel()
                                 .map(y -> {
-                                    y = 24;
+                                    y = random;
+                                    y = (int) Math.sqrt((y)*6);
+                                    y = (int) Math.sqrt((y)*6);
+                                    y = (int) Math.sqrt((y)*6);
                                     return 2 * (y+1);
                                 })
                                 .toArray())
@@ -111,17 +127,20 @@ public class MyBenchmark {
     @BenchmarkMode(Mode.Throughput)
     public void testMethod4() {
 
-        int iValue = 10000;
+        int iValue = 20000;
         int jValue = 1000;
 
         int array1[][] = new int[iValue][jValue];
-
+        int random = getRandom();
         int[][] doubled2D =
 
                 Arrays.stream(array1).parallel()
                         .map(x -> Arrays.stream(x).parallel()
                                 .map(y -> {
-                                    y = 24;
+                                    y = random;
+                                    y = (int) Math.sqrt((y)*6);
+                                    y = (int) Math.sqrt((y)*6);
+                                    y = (int) Math.sqrt((y)*6);
                                     return 2 * (y+1);
                                 })
                                 .toArray())
