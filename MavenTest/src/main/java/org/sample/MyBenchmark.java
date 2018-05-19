@@ -26,30 +26,106 @@
 package org.sample;
 
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
+import java.util.Arrays;
+import java.util.Random;
+import java.util.concurrent.ForkJoinPool;
+
+import static java.util.Arrays.stream;
+
 public class MyBenchmark {
 
     @Benchmark
-    public void testMethod() {
-        // place your benchmarked code here
-        //System.out.print("Hello World");
-        int iValue = 100;
-        int jValue = 100;
+    @BenchmarkMode(Mode.Throughput)
+    public void testMethod1() {
 
-        float array1[][] = new float[iValue][jValue];
+        int iValue = 10000;
+        int jValue = 1000;
 
-        // omp parallel for
-        for (int i = 0; i < iValue; i++) {
-            for (int j = 0; j < jValue; j++) {
-                array1[i][j] += 1;
-                array1[i][j] *= 5;
-                array1[i][j] /= 3;
-            }
-        }
+        int array1[][] = new int[iValue][jValue];
+
+        int[][] doubled2D =
+
+        Arrays.stream(array1)//.parallel()
+                .map(x -> Arrays.stream(x)//.parallel()
+                        .map(y -> {
+                            y = 24;
+                            return 2 * (y+1);
+                        })
+                        .toArray())
+                .toArray(int[][]::new);
+
+    }
+
+    @Benchmark
+    @BenchmarkMode(Mode.Throughput)
+    public void testMethod2() {
+
+        int iValue = 10000;
+        int jValue = 1000;
+
+        int array1[][] = new int[iValue][jValue];
+
+        int[][] doubled2D =
+
+                Arrays.stream(array1).parallel()
+                        .map(x -> Arrays.stream(x)//.parallel()
+                                .map(y -> {
+                                    y = 24;
+                                    return 2 * (y+1);
+                                })
+                                .toArray())
+                        .toArray(int[][]::new);
+
+    }
+
+    @Benchmark
+    @BenchmarkMode(Mode.Throughput)
+    public void testMethod3() {
+
+        int iValue = 10000;
+        int jValue = 1000;
+
+        int array1[][] = new int[iValue][jValue];
+
+        int[][] doubled2D =
+
+                Arrays.stream(array1)//.parallel()
+                        .map(x -> Arrays.stream(x).parallel()
+                                .map(y -> {
+                                    y = 24;
+                                    return 2 * (y+1);
+                                })
+                                .toArray())
+                        .toArray(int[][]::new);
+
+    }
+
+    @Benchmark
+    @BenchmarkMode(Mode.Throughput)
+    public void testMethod4() {
+
+        int iValue = 10000;
+        int jValue = 1000;
+
+        int array1[][] = new int[iValue][jValue];
+
+        int[][] doubled2D =
+
+                Arrays.stream(array1).parallel()
+                        .map(x -> Arrays.stream(x).parallel()
+                                .map(y -> {
+                                    y = 24;
+                                    return 2 * (y+1);
+                                })
+                                .toArray())
+                        .toArray(int[][]::new);
 
     }
 
@@ -60,8 +136,8 @@ public class MyBenchmark {
 
                 .include(MyBenchmark.class.getSimpleName())
                 .forks(1)
-                .warmupIterations(3)
-                .measurementIterations(10)
+                .warmupIterations(10)
+                .measurementIterations(50)
 
                 .build();
 
