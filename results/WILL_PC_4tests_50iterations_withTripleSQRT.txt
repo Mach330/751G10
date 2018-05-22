@@ -1,0 +1,318 @@
+"C:\Program Files\Java\jdk1.8.0_131\bin\java" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=53192:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;D:\dev\751G10\MavenTest\target\classes;C:\Users\Will\.m2\repository\org\openjdk\jmh\jmh-core\1.0\jmh-core-1.0.jar;C:\Users\Will\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\Will\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar" org.sample.MyBenchmark
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=53192:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod1
+
+# Run progress: 0.00% complete, ETA 00:04:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 12.048 ops/s
+# Warmup Iteration   2: 22.738 ops/s
+# Warmup Iteration   3: 27.628 ops/s
+# Warmup Iteration   4: 27.477 ops/s
+# Warmup Iteration   5: 27.460 ops/s
+# Warmup Iteration   6: 27.121 ops/s
+# Warmup Iteration   7: 27.693 ops/s
+# Warmup Iteration   8: 27.968 ops/s
+# Warmup Iteration   9: 28.241 ops/s
+# Warmup Iteration  10: 28.463 ops/s
+Iteration   1: 28.292 ops/s
+Iteration   2: 27.507 ops/s
+Iteration   3: 27.774 ops/s
+Iteration   4: 27.964 ops/s
+Iteration   5: 27.820 ops/s
+Iteration   6: 26.596 ops/s
+Iteration   7: 28.105 ops/s
+Iteration   8: 28.303 ops/s
+Iteration   9: 28.270 ops/s
+Iteration  10: 27.567 ops/s
+Iteration  11: 27.629 ops/s
+Iteration  12: 27.921 ops/s
+Iteration  13: 28.032 ops/s
+Iteration  14: 28.040 ops/s
+Iteration  15: 28.043 ops/s
+Iteration  16: 28.089 ops/s
+Iteration  17: 28.294 ops/s
+Iteration  18: 28.118 ops/s
+Iteration  19: 27.934 ops/s
+Iteration  20: 27.883 ops/s
+Iteration  21: 27.970 ops/s
+Iteration  22: 27.880 ops/s
+Iteration  23: 27.937 ops/s
+Iteration  24: 27.190 ops/s
+Iteration  25: 27.773 ops/s
+Iteration  26: 26.687 ops/s
+Iteration  27: 27.548 ops/s
+Iteration  28: 26.992 ops/s
+Iteration  29: 25.986 ops/s
+Iteration  30: 28.007 ops/s
+Iteration  31: 27.636 ops/s
+Iteration  32: 28.374 ops/s
+Iteration  33: 28.385 ops/s
+Iteration  34: 28.587 ops/s
+Iteration  35: 28.391 ops/s
+Iteration  36: 27.739 ops/s
+Iteration  37: 28.162 ops/s
+Iteration  38: 28.339 ops/s
+Iteration  39: 28.486 ops/s
+Iteration  40: 28.401 ops/s
+Iteration  41: 28.344 ops/s
+Iteration  42: 28.546 ops/s
+Iteration  43: 28.867 ops/s
+Iteration  44: 28.106 ops/s
+Iteration  45: 28.598 ops/s
+Iteration  46: 28.083 ops/s
+Iteration  47: 28.695 ops/s
+Iteration  48: 28.536 ops/s
+Iteration  49: 27.427 ops/s
+Iteration  50: 28.733 ops/s
+
+
+Result: 27.972 ±(99.9%) 0.278 ops/s [Average]
+  Statistics: (min, avg, max) = (25.986, 27.972, 28.867), stdev = 0.561
+  Confidence interval (99.9%): [27.694, 28.249]
+
+
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=53192:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod2
+
+# Run progress: 25.00% complete, ETA 00:03:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.998 ops/s
+# Warmup Iteration   2: 16.326 ops/s
+# Warmup Iteration   3: 17.697 ops/s
+# Warmup Iteration   4: 17.225 ops/s
+# Warmup Iteration   5: 16.663 ops/s
+# Warmup Iteration   6: 16.789 ops/s
+# Warmup Iteration   7: 18.109 ops/s
+# Warmup Iteration   8: 16.684 ops/s
+# Warmup Iteration   9: 17.096 ops/s
+# Warmup Iteration  10: 17.626 ops/s
+Iteration   1: 17.323 ops/s
+Iteration   2: 18.160 ops/s
+Iteration   3: 17.114 ops/s
+Iteration   4: 17.356 ops/s
+Iteration   5: 17.365 ops/s
+Iteration   6: 18.037 ops/s
+Iteration   7: 17.479 ops/s
+Iteration   8: 17.253 ops/s
+Iteration   9: 16.516 ops/s
+Iteration  10: 18.278 ops/s
+Iteration  11: 17.881 ops/s
+Iteration  12: 17.807 ops/s
+Iteration  13: 17.492 ops/s
+Iteration  14: 17.806 ops/s
+Iteration  15: 17.011 ops/s
+Iteration  16: 17.062 ops/s
+Iteration  17: 17.589 ops/s
+Iteration  18: 17.751 ops/s
+Iteration  19: 17.835 ops/s
+Iteration  20: 17.875 ops/s
+Iteration  21: 16.968 ops/s
+Iteration  22: 17.802 ops/s
+Iteration  23: 17.474 ops/s
+Iteration  24: 17.581 ops/s
+Iteration  25: 18.204 ops/s
+Iteration  26: 17.339 ops/s
+Iteration  27: 16.972 ops/s
+Iteration  28: 17.597 ops/s
+Iteration  29: 16.861 ops/s
+Iteration  30: 17.154 ops/s
+Iteration  31: 17.348 ops/s
+Iteration  32: 17.515 ops/s
+Iteration  33: 17.413 ops/s
+Iteration  34: 17.492 ops/s
+Iteration  35: 17.052 ops/s
+Iteration  36: 17.357 ops/s
+Iteration  37: 17.367 ops/s
+Iteration  38: 17.604 ops/s
+Iteration  39: 16.655 ops/s
+Iteration  40: 17.451 ops/s
+Iteration  41: 18.015 ops/s
+Iteration  42: 17.348 ops/s
+Iteration  43: 17.802 ops/s
+Iteration  44: 17.877 ops/s
+Iteration  45: 17.537 ops/s
+Iteration  46: 16.258 ops/s
+Iteration  47: 17.739 ops/s
+Iteration  48: 18.134 ops/s
+Iteration  49: 17.286 ops/s
+Iteration  50: 17.286 ops/s
+
+
+Result: 17.470 ±(99.9%) 0.212 ops/s [Average]
+  Statistics: (min, avg, max) = (16.258, 17.470, 18.278), stdev = 0.427
+  Confidence interval (99.9%): [17.258, 17.681]
+
+
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=53192:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod3
+
+# Run progress: 50.00% complete, ETA 00:02:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.388 ops/s
+# Warmup Iteration   2: 3.308 ops/s
+# Warmup Iteration   3: 3.699 ops/s
+# Warmup Iteration   4: 3.822 ops/s
+# Warmup Iteration   5: 3.912 ops/s
+# Warmup Iteration   6: 3.685 ops/s
+# Warmup Iteration   7: 3.842 ops/s
+# Warmup Iteration   8: 3.882 ops/s
+# Warmup Iteration   9: 3.897 ops/s
+# Warmup Iteration  10: 3.790 ops/s
+Iteration   1: 3.797 ops/s
+Iteration   2: 3.768 ops/s
+Iteration   3: 3.876 ops/s
+Iteration   4: 3.900 ops/s
+Iteration   5: 3.881 ops/s
+Iteration   6: 3.830 ops/s
+Iteration   7: 3.769 ops/s
+Iteration   8: 3.906 ops/s
+Iteration   9: 3.909 ops/s
+Iteration  10: 3.927 ops/s
+Iteration  11: 3.895 ops/s
+Iteration  12: 3.886 ops/s
+Iteration  13: 3.859 ops/s
+Iteration  14: 3.889 ops/s
+Iteration  15: 3.833 ops/s
+Iteration  16: 3.908 ops/s
+Iteration  17: 3.804 ops/s
+Iteration  18: 3.910 ops/s
+Iteration  19: 3.809 ops/s
+Iteration  20: 3.851 ops/s
+Iteration  21: 3.914 ops/s
+Iteration  22: 3.875 ops/s
+Iteration  23: 3.853 ops/s
+Iteration  24: 3.886 ops/s
+Iteration  25: 3.802 ops/s
+Iteration  26: 3.923 ops/s
+Iteration  27: 3.886 ops/s
+Iteration  28: 3.848 ops/s
+Iteration  29: 3.821 ops/s
+Iteration  30: 3.793 ops/s
+Iteration  31: 3.758 ops/s
+Iteration  32: 3.835 ops/s
+Iteration  33: 3.868 ops/s
+Iteration  34: 3.911 ops/s
+Iteration  35: 3.923 ops/s
+Iteration  36: 3.943 ops/s
+Iteration  37: 3.890 ops/s
+Iteration  38: 3.633 ops/s
+Iteration  39: 3.901 ops/s
+Iteration  40: 3.864 ops/s
+Iteration  41: 3.893 ops/s
+Iteration  42: 3.848 ops/s
+Iteration  43: 3.877 ops/s
+Iteration  44: 3.927 ops/s
+Iteration  45: 3.829 ops/s
+Iteration  46: 3.899 ops/s
+Iteration  47: 3.926 ops/s
+Iteration  48: 3.895 ops/s
+Iteration  49: 3.908 ops/s
+Iteration  50: 3.833 ops/s
+
+
+Result: 3.863 ±(99.9%) 0.028 ops/s [Average]
+  Statistics: (min, avg, max) = (3.633, 3.863, 3.943), stdev = 0.057
+  Confidence interval (99.9%): [3.835, 3.892]
+
+
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=53192:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod4
+
+# Run progress: 75.00% complete, ETA 00:01:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 8.098 ops/s
+# Warmup Iteration   2: 20.985 ops/s
+# Warmup Iteration   3: 21.899 ops/s
+# Warmup Iteration   4: 21.991 ops/s
+# Warmup Iteration   5: 21.633 ops/s
+# Warmup Iteration   6: 21.159 ops/s
+# Warmup Iteration   7: 21.447 ops/s
+# Warmup Iteration   8: 22.061 ops/s
+# Warmup Iteration   9: 21.640 ops/s
+# Warmup Iteration  10: 21.983 ops/s
+Iteration   1: 21.281 ops/s
+Iteration   2: 22.136 ops/s
+Iteration   3: 21.889 ops/s
+Iteration   4: 21.609 ops/s
+Iteration   5: 21.643 ops/s
+Iteration   6: 21.958 ops/s
+Iteration   7: 22.176 ops/s
+Iteration   8: 21.649 ops/s
+Iteration   9: 21.713 ops/s
+Iteration  10: 21.147 ops/s
+Iteration  11: 20.501 ops/s
+Iteration  12: 22.460 ops/s
+Iteration  13: 22.261 ops/s
+Iteration  14: 22.010 ops/s
+Iteration  15: 21.059 ops/s
+Iteration  16: 22.323 ops/s
+Iteration  17: 22.274 ops/s
+Iteration  18: 21.818 ops/s
+Iteration  19: 22.125 ops/s
+Iteration  20: 21.509 ops/s
+Iteration  21: 22.040 ops/s
+Iteration  22: 21.527 ops/s
+Iteration  23: 21.555 ops/s
+Iteration  24: 21.573 ops/s
+Iteration  25: 22.104 ops/s
+Iteration  26: 21.199 ops/s
+Iteration  27: 21.572 ops/s
+Iteration  28: 21.944 ops/s
+Iteration  29: 22.059 ops/s
+Iteration  30: 21.571 ops/s
+Iteration  31: 22.346 ops/s
+Iteration  32: 22.342 ops/s
+Iteration  33: 21.448 ops/s
+Iteration  34: 21.777 ops/s
+Iteration  35: 22.109 ops/s
+Iteration  36: 21.494 ops/s
+Iteration  37: 22.172 ops/s
+Iteration  38: 21.128 ops/s
+Iteration  39: 21.406 ops/s
+Iteration  40: 21.822 ops/s
+Iteration  41: 21.813 ops/s
+Iteration  42: 22.276 ops/s
+Iteration  43: 21.730 ops/s
+Iteration  44: 21.269 ops/s
+Iteration  45: 21.894 ops/s
+Iteration  46: 21.709 ops/s
+Iteration  47: 21.481 ops/s
+Iteration  48: 21.780 ops/s
+Iteration  49: 21.336 ops/s
+Iteration  50: 21.248 ops/s
+
+
+Result: 21.745 ±(99.9%) 0.203 ops/s [Average]
+  Statistics: (min, avg, max) = (20.501, 21.745, 22.460), stdev = 0.410
+  Confidence interval (99.9%): [21.542, 21.948]
+
+
+# Run complete. Total time: 00:05:00
+
+Benchmark                       Mode  Samples   Score  Score error  Units
+o.s.MyBenchmark.testMethod1    thrpt       50  27.972        0.278  ops/s
+o.s.MyBenchmark.testMethod2    thrpt       50  17.470        0.212  ops/s
+o.s.MyBenchmark.testMethod3    thrpt       50   3.863        0.028  ops/s
+o.s.MyBenchmark.testMethod4    thrpt       50  21.745        0.203  ops/s
+
+Process finished with exit code 0
