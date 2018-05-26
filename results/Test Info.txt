@@ -4,3 +4,9 @@ Instead of using a for loop to iterate through arrays, we use an Array Stream.
 With the stream, we are able to specify whether we want to parallelise the stream or not.
 
 Our test setup has a 2D array with a nested stream.
+
+For each benchmark the 2 streams have different parallel flags enabled.
+For benchmark 1, no parallel flags
+For benchmark 2, just the outer loop is parallelised
+For benchmark 3, just the inner loop is parallelised
+For benchmark 4, both loops are parallelised
