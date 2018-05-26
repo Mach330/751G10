@@ -1,0 +1,646 @@
+"C:\Program Files\Java\jdk1.8.0_131\bin\java" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=59209:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;D:\dev\751G10\MavenTest\target\classes;C:\Users\Will\.m2\repository\org\openjdk\jmh\jmh-core\1.0\jmh-core-1.0.jar;C:\Users\Will\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\Will\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar" org.sample.MyBenchmark
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=59209:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod1
+
+# Run progress: 0.00% complete, ETA 00:09:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 1335.950 ops/s
+# Warmup Iteration   2: 1395.593 ops/s
+# Warmup Iteration   3: 1406.767 ops/s
+# Warmup Iteration   4: 1391.275 ops/s
+# Warmup Iteration   5: 1386.080 ops/s
+# Warmup Iteration   6: 1379.823 ops/s
+# Warmup Iteration   7: 1412.532 ops/s
+# Warmup Iteration   8: 1392.423 ops/s
+# Warmup Iteration   9: 1407.320 ops/s
+# Warmup Iteration  10: 1426.738 ops/s
+Iteration   1: 1415.746 ops/s
+Iteration   2: 1415.733 ops/s
+Iteration   3: 1418.131 ops/s
+Iteration   4: 1399.305 ops/s
+Iteration   5: 1405.058 ops/s
+Iteration   6: 1401.604 ops/s
+Iteration   7: 1402.008 ops/s
+Iteration   8: 1394.730 ops/s
+Iteration   9: 1396.188 ops/s
+Iteration  10: 1391.690 ops/s
+Iteration  11: 1405.776 ops/s
+Iteration  12: 1407.970 ops/s
+Iteration  13: 1393.132 ops/s
+Iteration  14: 1446.342 ops/s
+Iteration  15: 1407.476 ops/s
+Iteration  16: 1393.865 ops/s
+Iteration  17: 1385.238 ops/s
+Iteration  18: 1396.920 ops/s
+Iteration  19: 1399.118 ops/s
+Iteration  20: 1396.480 ops/s
+Iteration  21: 1381.367 ops/s
+Iteration  22: 1395.221 ops/s
+Iteration  23: 1407.263 ops/s
+Iteration  24: 1417.267 ops/s
+Iteration  25: 1409.534 ops/s
+Iteration  26: 1386.589 ops/s
+Iteration  27: 1430.497 ops/s
+Iteration  28: 1407.100 ops/s
+Iteration  29: 1415.176 ops/s
+Iteration  30: 1414.897 ops/s
+Iteration  31: 1419.514 ops/s
+Iteration  32: 1420.699 ops/s
+Iteration  33: 1419.010 ops/s
+Iteration  34: 1409.756 ops/s
+Iteration  35: 1402.055 ops/s
+Iteration  36: 1405.485 ops/s
+Iteration  37: 1410.523 ops/s
+Iteration  38: 1408.686 ops/s
+Iteration  39: 1381.904 ops/s
+Iteration  40: 1424.697 ops/s
+Iteration  41: 1406.202 ops/s
+Iteration  42: 1414.397 ops/s
+Iteration  43: 1355.043 ops/s
+Iteration  44: 1426.369 ops/s
+Iteration  45: 1408.634 ops/s
+Iteration  46: 1423.710 ops/s
+Iteration  47: 1404.166 ops/s
+Iteration  48: 1409.240 ops/s
+Iteration  49: 1412.589 ops/s
+Iteration  50: 1405.235 ops/s
+Iteration  51: 1412.828 ops/s
+Iteration  52: 1415.922 ops/s
+Iteration  53: 1363.494 ops/s
+Iteration  54: 1319.779 ops/s
+Iteration  55: 1399.241 ops/s
+Iteration  56: 1392.078 ops/s
+Iteration  57: 1419.985 ops/s
+Iteration  58: 1411.597 ops/s
+Iteration  59: 1405.300 ops/s
+Iteration  60: 1414.054 ops/s
+Iteration  61: 1403.082 ops/s
+Iteration  62: 883.732 ops/s
+Iteration  63: 1420.755 ops/s
+Iteration  64: 1396.305 ops/s
+Iteration  65: 1399.274 ops/s
+Iteration  66: 1410.888 ops/s
+Iteration  67: 1417.629 ops/s
+Iteration  68: 1413.684 ops/s
+Iteration  69: 1410.314 ops/s
+Iteration  70: 1416.462 ops/s
+Iteration  71: 1410.670 ops/s
+Iteration  72: 1418.434 ops/s
+Iteration  73: 1395.673 ops/s
+Iteration  74: 1418.625 ops/s
+Iteration  75: 1393.952 ops/s
+Iteration  76: 1310.023 ops/s
+Iteration  77: 1415.203 ops/s
+Iteration  78: 1405.484 ops/s
+Iteration  79: 1428.350 ops/s
+Iteration  80: 1425.102 ops/s
+Iteration  81: 1420.408 ops/s
+Iteration  82: 1408.859 ops/s
+Iteration  83: 1397.780 ops/s
+Iteration  84: 1399.690 ops/s
+Iteration  85: 1383.182 ops/s
+Iteration  86: 1412.789 ops/s
+Iteration  87: 1442.668 ops/s
+Iteration  88: 1404.394 ops/s
+Iteration  89: 1434.574 ops/s
+Iteration  90: 1395.385 ops/s
+Iteration  91: 1427.493 ops/s
+Iteration  92: 1433.425 ops/s
+Iteration  93: 1397.315 ops/s
+Iteration  94: 1386.719 ops/s
+Iteration  95: 1402.961 ops/s
+Iteration  96: 1443.593 ops/s
+Iteration  97: 1424.795 ops/s
+Iteration  98: 1382.721 ops/s
+Iteration  99: 1401.589 ops/s
+Iteration 100: 1415.342 ops/s
+
+
+Result: 1400.689 ±(99.9%) 18.949 ops/s [Average]
+  Statistics: (min, avg, max) = (883.732, 1400.689, 1446.342), stdev = 55.871
+  Confidence interval (99.9%): [1381.740, 1419.638]
+
+
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=59209:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod2
+
+# Run progress: 20.00% complete, ETA 00:08:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 3402.504 ops/s
+# Warmup Iteration   2: 3552.435 ops/s
+# Warmup Iteration   3: 3615.158 ops/s
+# Warmup Iteration   4: 3594.108 ops/s
+# Warmup Iteration   5: 3560.931 ops/s
+# Warmup Iteration   6: 3552.115 ops/s
+# Warmup Iteration   7: 3591.070 ops/s
+# Warmup Iteration   8: 3559.212 ops/s
+# Warmup Iteration   9: 3568.568 ops/s
+# Warmup Iteration  10: 3581.306 ops/s
+Iteration   1: 3587.861 ops/s
+Iteration   2: 3618.215 ops/s
+Iteration   3: 3577.227 ops/s
+Iteration   4: 3562.517 ops/s
+Iteration   5: 3608.994 ops/s
+Iteration   6: 3561.844 ops/s
+Iteration   7: 3566.544 ops/s
+Iteration   8: 3539.651 ops/s
+Iteration   9: 3573.707 ops/s
+Iteration  10: 3594.843 ops/s
+Iteration  11: 3581.203 ops/s
+Iteration  12: 3578.354 ops/s
+Iteration  13: 3570.782 ops/s
+Iteration  14: 3599.022 ops/s
+Iteration  15: 3612.091 ops/s
+Iteration  16: 3569.538 ops/s
+Iteration  17: 3550.433 ops/s
+Iteration  18: 3564.498 ops/s
+Iteration  19: 3624.810 ops/s
+Iteration  20: 3563.697 ops/s
+Iteration  21: 3588.763 ops/s
+Iteration  22: 3570.003 ops/s
+Iteration  23: 3601.419 ops/s
+Iteration  24: 3582.318 ops/s
+Iteration  25: 3599.262 ops/s
+Iteration  26: 3590.318 ops/s
+Iteration  27: 3572.268 ops/s
+Iteration  28: 3583.508 ops/s
+Iteration  29: 3572.750 ops/s
+Iteration  30: 3620.694 ops/s
+Iteration  31: 3585.873 ops/s
+Iteration  32: 3605.569 ops/s
+Iteration  33: 3549.778 ops/s
+Iteration  34: 3575.362 ops/s
+Iteration  35: 3558.761 ops/s
+Iteration  36: 3600.306 ops/s
+Iteration  37: 3579.525 ops/s
+Iteration  38: 3586.111 ops/s
+Iteration  39: 3573.467 ops/s
+Iteration  40: 3593.695 ops/s
+Iteration  41: 3586.621 ops/s
+Iteration  42: 3599.772 ops/s
+Iteration  43: 3565.934 ops/s
+Iteration  44: 3587.573 ops/s
+Iteration  45: 3579.404 ops/s
+Iteration  46: 3554.823 ops/s
+Iteration  47: 3579.387 ops/s
+Iteration  48: 3568.182 ops/s
+Iteration  49: 3588.673 ops/s
+Iteration  50: 3572.837 ops/s
+Iteration  51: 3575.548 ops/s
+Iteration  52: 3569.803 ops/s
+Iteration  53: 3576.719 ops/s
+Iteration  54: 3599.264 ops/s
+Iteration  55: 3557.822 ops/s
+Iteration  56: 3612.660 ops/s
+Iteration  57: 3613.323 ops/s
+Iteration  58: 3559.305 ops/s
+Iteration  59: 3547.143 ops/s
+Iteration  60: 3600.243 ops/s
+Iteration  61: 3580.394 ops/s
+Iteration  62: 3578.087 ops/s
+Iteration  63: 3560.033 ops/s
+Iteration  64: 3590.717 ops/s
+Iteration  65: 3576.647 ops/s
+Iteration  66: 3572.393 ops/s
+Iteration  67: 3574.538 ops/s
+Iteration  68: 3589.600 ops/s
+Iteration  69: 3599.019 ops/s
+Iteration  70: 3620.558 ops/s
+Iteration  71: 3582.068 ops/s
+Iteration  72: 3562.327 ops/s
+Iteration  73: 3568.651 ops/s
+Iteration  74: 3562.006 ops/s
+Iteration  75: 3502.687 ops/s
+Iteration  76: 3550.103 ops/s
+Iteration  77: 3583.694 ops/s
+Iteration  78: 3540.743 ops/s
+Iteration  79: 3608.590 ops/s
+Iteration  80: 3546.837 ops/s
+Iteration  81: 3557.870 ops/s
+Iteration  82: 3563.506 ops/s
+Iteration  83: 3612.707 ops/s
+Iteration  84: 3551.246 ops/s
+Iteration  85: 3555.417 ops/s
+Iteration  86: 3609.723 ops/s
+Iteration  87: 3610.897 ops/s
+Iteration  88: 3597.142 ops/s
+Iteration  89: 3561.376 ops/s
+Iteration  90: 3577.584 ops/s
+Iteration  91: 3613.548 ops/s
+Iteration  92: 3597.456 ops/s
+Iteration  93: 3589.930 ops/s
+Iteration  94: 3549.746 ops/s
+Iteration  95: 3553.342 ops/s
+Iteration  96: 3567.677 ops/s
+Iteration  97: 3596.996 ops/s
+Iteration  98: 3504.311 ops/s
+Iteration  99: 3384.591 ops/s
+Iteration 100: 3396.132 ops/s
+
+
+Result: 3574.915 ±(99.9%) 11.842 ops/s [Average]
+  Statistics: (min, avg, max) = (3384.591, 3574.915, 3624.810), stdev = 34.916
+  Confidence interval (99.9%): [3563.073, 3586.757]
+
+
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=59209:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod3
+
+# Run progress: 40.00% complete, ETA 00:06:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 1207.182 ops/s
+# Warmup Iteration   2: 1330.770 ops/s
+# Warmup Iteration   3: 1303.801 ops/s
+# Warmup Iteration   4: 1327.447 ops/s
+# Warmup Iteration   5: 1326.845 ops/s
+# Warmup Iteration   6: 1359.329 ops/s
+# Warmup Iteration   7: 1362.654 ops/s
+# Warmup Iteration   8: 1343.549 ops/s
+# Warmup Iteration   9: 1337.795 ops/s
+# Warmup Iteration  10: 1346.169 ops/s
+Iteration   1: 1375.355 ops/s
+Iteration   2: 1354.927 ops/s
+Iteration   3: 1353.170 ops/s
+Iteration   4: 1359.206 ops/s
+Iteration   5: 1369.286 ops/s
+Iteration   6: 1353.169 ops/s
+Iteration   7: 1353.615 ops/s
+Iteration   8: 1375.733 ops/s
+Iteration   9: 1364.077 ops/s
+Iteration  10: 1360.099 ops/s
+Iteration  11: 1386.504 ops/s
+Iteration  12: 1358.669 ops/s
+Iteration  13: 1363.484 ops/s
+Iteration  14: 1370.242 ops/s
+Iteration  15: 1361.096 ops/s
+Iteration  16: 1365.362 ops/s
+Iteration  17: 1372.241 ops/s
+Iteration  18: 1348.091 ops/s
+Iteration  19: 1383.033 ops/s
+Iteration  20: 1369.683 ops/s
+Iteration  21: 1384.976 ops/s
+Iteration  22: 1381.974 ops/s
+Iteration  23: 1375.089 ops/s
+Iteration  24: 1374.718 ops/s
+Iteration  25: 1394.280 ops/s
+Iteration  26: 1385.544 ops/s
+Iteration  27: 1364.006 ops/s
+Iteration  28: 1381.771 ops/s
+Iteration  29: 1344.930 ops/s
+Iteration  30: 1312.142 ops/s
+Iteration  31: 1382.243 ops/s
+Iteration  32: 1386.856 ops/s
+Iteration  33: 1377.646 ops/s
+Iteration  34: 1378.295 ops/s
+Iteration  35: 1357.270 ops/s
+Iteration  36: 1360.513 ops/s
+Iteration  37: 1371.330 ops/s
+Iteration  38: 1364.238 ops/s
+Iteration  39: 1378.591 ops/s
+Iteration  40: 1342.187 ops/s
+Iteration  41: 1368.796 ops/s
+Iteration  42: 1375.178 ops/s
+Iteration  43: 1371.058 ops/s
+Iteration  44: 1316.599 ops/s
+Iteration  45: 1358.776 ops/s
+Iteration  46: 1383.094 ops/s
+Iteration  47: 1372.444 ops/s
+Iteration  48: 1390.926 ops/s
+Iteration  49: 1364.575 ops/s
+Iteration  50: 1374.937 ops/s
+Iteration  51: 1349.192 ops/s
+Iteration  52: 1365.418 ops/s
+Iteration  53: 1365.187 ops/s
+Iteration  54: 1275.315 ops/s
+Iteration  55: 1203.086 ops/s
+Iteration  56: 1364.419 ops/s
+Iteration  57: 1378.196 ops/s
+Iteration  58: 1369.327 ops/s
+Iteration  59: 1374.957 ops/s
+Iteration  60: 1367.927 ops/s
+Iteration  61: 1372.183 ops/s
+Iteration  62: 1370.156 ops/s
+Iteration  63: 1374.314 ops/s
+Iteration  64: 1378.884 ops/s
+Iteration  65: 1348.705 ops/s
+Iteration  66: 1361.003 ops/s
+Iteration  67: 1386.695 ops/s
+Iteration  68: 1328.796 ops/s
+Iteration  69: 1378.830 ops/s
+Iteration  70: 1370.487 ops/s
+Iteration  71: 1368.792 ops/s
+Iteration  72: 1381.003 ops/s
+Iteration  73: 1377.922 ops/s
+Iteration  74: 1376.599 ops/s
+Iteration  75: 1377.340 ops/s
+Iteration  76: 1380.890 ops/s
+Iteration  77: 1365.347 ops/s
+Iteration  78: 1381.911 ops/s
+Iteration  79: 1377.751 ops/s
+Iteration  80: 1354.644 ops/s
+Iteration  81: 1371.265 ops/s
+Iteration  82: 1377.542 ops/s
+Iteration  83: 1369.909 ops/s
+Iteration  84: 1363.405 ops/s
+Iteration  85: 1370.501 ops/s
+Iteration  86: 1373.970 ops/s
+Iteration  87: 1365.615 ops/s
+Iteration  88: 1361.568 ops/s
+Iteration  89: 1357.732 ops/s
+Iteration  90: 1364.907 ops/s
+Iteration  91: 1360.041 ops/s
+Iteration  92: 1377.850 ops/s
+Iteration  93: 1384.430 ops/s
+Iteration  94: 1364.747 ops/s
+Iteration  95: 1370.228 ops/s
+Iteration  96: 1376.627 ops/s
+Iteration  97: 1390.558 ops/s
+Iteration  98: 1377.893 ops/s
+Iteration  99: 1375.173 ops/s
+Iteration 100: 1401.417 ops/s
+
+
+Result: 1366.527 ±(99.9%) 8.026 ops/s [Average]
+  Statistics: (min, avg, max) = (1203.086, 1366.527, 1401.417), stdev = 23.665
+  Confidence interval (99.9%): [1358.501, 1374.553]
+
+
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=59209:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethod4
+
+# Run progress: 60.00% complete, ETA 00:04:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 4032.820 ops/s
+# Warmup Iteration   2: 4216.732 ops/s
+# Warmup Iteration   3: 4230.843 ops/s
+# Warmup Iteration   4: 4222.855 ops/s
+# Warmup Iteration   5: 4215.947 ops/s
+# Warmup Iteration   6: 4210.213 ops/s
+# Warmup Iteration   7: 4219.312 ops/s
+# Warmup Iteration   8: 4213.557 ops/s
+# Warmup Iteration   9: 4168.959 ops/s
+# Warmup Iteration  10: 4241.382 ops/s
+Iteration   1: 4214.653 ops/s
+Iteration   2: 4206.243 ops/s
+Iteration   3: 4169.308 ops/s
+Iteration   4: 4209.423 ops/s
+Iteration   5: 4166.082 ops/s
+Iteration   6: 4200.705 ops/s
+Iteration   7: 4176.191 ops/s
+Iteration   8: 4177.156 ops/s
+Iteration   9: 4196.630 ops/s
+Iteration  10: 4159.240 ops/s
+Iteration  11: 4185.739 ops/s
+Iteration  12: 4176.443 ops/s
+Iteration  13: 4180.308 ops/s
+Iteration  14: 4200.940 ops/s
+Iteration  15: 4242.275 ops/s
+Iteration  16: 4185.570 ops/s
+Iteration  17: 4141.231 ops/s
+Iteration  18: 4158.546 ops/s
+Iteration  19: 4190.526 ops/s
+Iteration  20: 4172.803 ops/s
+Iteration  21: 4187.255 ops/s
+Iteration  22: 4192.941 ops/s
+Iteration  23: 4187.764 ops/s
+Iteration  24: 4200.575 ops/s
+Iteration  25: 4209.773 ops/s
+Iteration  26: 4226.953 ops/s
+Iteration  27: 4241.570 ops/s
+Iteration  28: 4218.293 ops/s
+Iteration  29: 4230.963 ops/s
+Iteration  30: 4229.325 ops/s
+Iteration  31: 4183.148 ops/s
+Iteration  32: 4189.264 ops/s
+Iteration  33: 4178.412 ops/s
+Iteration  34: 4210.246 ops/s
+Iteration  35: 4175.656 ops/s
+Iteration  36: 4200.027 ops/s
+Iteration  37: 4174.239 ops/s
+Iteration  38: 4179.997 ops/s
+Iteration  39: 4168.516 ops/s
+Iteration  40: 4213.547 ops/s
+Iteration  41: 4186.008 ops/s
+Iteration  42: 4201.503 ops/s
+Iteration  43: 4163.448 ops/s
+Iteration  44: 4227.545 ops/s
+Iteration  45: 4196.753 ops/s
+Iteration  46: 4212.613 ops/s
+Iteration  47: 4168.463 ops/s
+Iteration  48: 4177.113 ops/s
+Iteration  49: 4203.842 ops/s
+Iteration  50: 4204.523 ops/s
+Iteration  51: 4200.656 ops/s
+Iteration  52: 4194.439 ops/s
+Iteration  53: 4202.607 ops/s
+Iteration  54: 4193.228 ops/s
+Iteration  55: 4191.524 ops/s
+Iteration  56: 4199.387 ops/s
+Iteration  57: 4179.535 ops/s
+Iteration  58: 4183.144 ops/s
+Iteration  59: 4181.722 ops/s
+Iteration  60: 4208.856 ops/s
+Iteration  61: 4161.664 ops/s
+Iteration  62: 4220.969 ops/s
+Iteration  63: 4164.879 ops/s
+Iteration  64: 4163.893 ops/s
+Iteration  65: 4193.451 ops/s
+Iteration  66: 4200.658 ops/s
+Iteration  67: 4183.943 ops/s
+Iteration  68: 4172.848 ops/s
+Iteration  69: 4208.506 ops/s
+Iteration  70: 4200.769 ops/s
+Iteration  71: 4180.808 ops/s
+Iteration  72: 4206.490 ops/s
+Iteration  73: 4148.544 ops/s
+Iteration  74: 4208.617 ops/s
+Iteration  75: 4171.859 ops/s
+Iteration  76: 4148.723 ops/s
+Iteration  77: 4140.171 ops/s
+Iteration  78: 4165.173 ops/s
+Iteration  79: 4167.518 ops/s
+Iteration  80: 4171.747 ops/s
+Iteration  81: 4185.875 ops/s
+Iteration  82: 4183.960 ops/s
+Iteration  83: 4184.849 ops/s
+Iteration  84: 4182.275 ops/s
+Iteration  85: 4169.640 ops/s
+Iteration  86: 4214.144 ops/s
+Iteration  87: 4179.227 ops/s
+Iteration  88: 4110.550 ops/s
+Iteration  89: 4132.557 ops/s
+Iteration  90: 4077.276 ops/s
+Iteration  91: 4087.350 ops/s
+Iteration  92: 4064.487 ops/s
+Iteration  93: 3973.751 ops/s
+Iteration  94: 3935.322 ops/s
+Iteration  95: 3911.855 ops/s
+Iteration  96: 4146.968 ops/s
+Iteration  97: 3676.616 ops/s
+Iteration  98: 4148.682 ops/s
+Iteration  99: 4155.004 ops/s
+Iteration 100: 4150.732 ops/s
+
+
+Result: 4170.377 ±(99.9%) 24.314 ops/s [Average]
+  Statistics: (min, avg, max) = (3676.616, 4170.377, 4242.275), stdev = 71.691
+  Confidence interval (99.9%): [4146.063, 4194.692]
+
+
+# VM invoker: C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\lib\idea_rt.jar=59209:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.2.1\bin -Dfile.encoding=UTF-8
+# Warmup: 10 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.MyBenchmark.testMethodFOR
+
+# Run progress: 80.00% complete, ETA 00:02:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 1419.077 ops/s
+# Warmup Iteration   2: 1410.279 ops/s
+# Warmup Iteration   3: 1398.286 ops/s
+# Warmup Iteration   4: 1393.685 ops/s
+# Warmup Iteration   5: 1425.087 ops/s
+# Warmup Iteration   6: 1407.570 ops/s
+# Warmup Iteration   7: 1413.064 ops/s
+# Warmup Iteration   8: 1410.562 ops/s
+# Warmup Iteration   9: 1432.244 ops/s
+# Warmup Iteration  10: 1401.983 ops/s
+Iteration   1: 1410.939 ops/s
+Iteration   2: 1417.995 ops/s
+Iteration   3: 1415.122 ops/s
+Iteration   4: 1408.216 ops/s
+Iteration   5: 1413.242 ops/s
+Iteration   6: 1427.284 ops/s
+Iteration   7: 1431.238 ops/s
+Iteration   8: 1429.839 ops/s
+Iteration   9: 1431.733 ops/s
+Iteration  10: 1426.160 ops/s
+Iteration  11: 1417.854 ops/s
+Iteration  12: 1401.800 ops/s
+Iteration  13: 1427.412 ops/s
+Iteration  14: 1419.130 ops/s
+Iteration  15: 1387.269 ops/s
+Iteration  16: 1405.127 ops/s
+Iteration  17: 1431.920 ops/s
+Iteration  18: 1402.403 ops/s
+Iteration  19: 1434.601 ops/s
+Iteration  20: 1407.402 ops/s
+Iteration  21: 1415.724 ops/s
+Iteration  22: 1409.632 ops/s
+Iteration  23: 1373.173 ops/s
+Iteration  24: 1442.980 ops/s
+Iteration  25: 1416.037 ops/s
+Iteration  26: 1409.858 ops/s
+Iteration  27: 1399.282 ops/s
+Iteration  28: 1419.628 ops/s
+Iteration  29: 1441.479 ops/s
+Iteration  30: 1422.859 ops/s
+Iteration  31: 1434.511 ops/s
+Iteration  32: 1406.653 ops/s
+Iteration  33: 1431.993 ops/s
+Iteration  34: 1404.467 ops/s
+Iteration  35: 1381.493 ops/s
+Iteration  36: 1402.686 ops/s
+Iteration  37: 1453.116 ops/s
+Iteration  38: 1441.056 ops/s
+Iteration  39: 1404.442 ops/s
+Iteration  40: 1417.891 ops/s
+Iteration  41: 1437.514 ops/s
+Iteration  42: 1424.702 ops/s
+Iteration  43: 1440.827 ops/s
+Iteration  44: 1411.965 ops/s
+Iteration  45: 1386.857 ops/s
+Iteration  46: 1417.437 ops/s
+Iteration  47: 1405.998 ops/s
+Iteration  48: 1416.858 ops/s
+Iteration  49: 1441.032 ops/s
+Iteration  50: 1418.785 ops/s
+Iteration  51: 1413.545 ops/s
+Iteration  52: 1418.019 ops/s
+Iteration  53: 1400.666 ops/s
+Iteration  54: 1433.766 ops/s
+Iteration  55: 1413.407 ops/s
+Iteration  56: 1423.070 ops/s
+Iteration  57: 1419.341 ops/s
+Iteration  58: 1410.160 ops/s
+Iteration  59: 1425.338 ops/s
+Iteration  60: 1432.914 ops/s
+Iteration  61: 1415.452 ops/s
+Iteration  62: 1444.173 ops/s
+Iteration  63: 1392.002 ops/s
+Iteration  64: 1397.175 ops/s
+Iteration  65: 1402.671 ops/s
+Iteration  66: 1432.526 ops/s
+Iteration  67: 1423.192 ops/s
+Iteration  68: 1412.815 ops/s
+Iteration  69: 1416.318 ops/s
+Iteration  70: 1420.377 ops/s
+Iteration  71: 1412.818 ops/s
+Iteration  72: 1429.190 ops/s
+Iteration  73: 1429.825 ops/s
+Iteration  74: 1417.110 ops/s
+Iteration  75: 1420.964 ops/s
+Iteration  76: 1429.107 ops/s
+Iteration  77: 1438.374 ops/s
+Iteration  78: 1410.188 ops/s
+Iteration  79: 1403.382 ops/s
+Iteration  80: 1410.350 ops/s
+Iteration  81: 1427.303 ops/s
+Iteration  82: 1417.237 ops/s
+Iteration  83: 1421.070 ops/s
+Iteration  84: 1393.461 ops/s
+Iteration  85: 1410.292 ops/s
+Iteration  86: 1421.420 ops/s
+Iteration  87: 1420.961 ops/s
+Iteration  88: 1433.653 ops/s
+Iteration  89: 1421.732 ops/s
+Iteration  90: 1401.704 ops/s
+Iteration  91: 1410.950 ops/s
+Iteration  92: 1396.903 ops/s
+Iteration  93: 1409.394 ops/s
+Iteration  94: 1405.550 ops/s
+Iteration  95: 1426.085 ops/s
+Iteration  96: 1381.346 ops/s
+Iteration  97: 1411.981 ops/s
+Iteration  98: 1423.159 ops/s
+Iteration  99: 1388.448 ops/s
+Iteration 100: 1398.709 ops/s
+
+
+Result: 1416.472 ±(99.9%) 5.136 ops/s [Average]
+  Statistics: (min, avg, max) = (1373.173, 1416.472, 1453.116), stdev = 15.143
+  Confidence interval (99.9%): [1411.336, 1421.608]
+
+
+# Run complete. Total time: 00:11:03
+
+Benchmark                         Mode  Samples     Score  Score error  Units
+o.s.MyBenchmark.testMethod1      thrpt      100  1400.689       18.949  ops/s
+o.s.MyBenchmark.testMethod2      thrpt      100  3574.915       11.842  ops/s
+o.s.MyBenchmark.testMethod3      thrpt      100  1366.527        8.026  ops/s
+o.s.MyBenchmark.testMethod4      thrpt      100  4170.377       24.314  ops/s
+o.s.MyBenchmark.testMethodFOR    thrpt      100  1416.472        5.136  ops/s
+
+Process finished with exit code 0

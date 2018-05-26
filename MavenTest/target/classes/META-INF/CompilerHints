@@ -14,8 +14,13 @@ dontinline,org/sample/MyBenchmark.testMethod4_avgt_jmhLoop
 dontinline,org/sample/MyBenchmark.testMethod4_sample_jmhLoop
 dontinline,org/sample/MyBenchmark.testMethod4_ss_jmhStub
 dontinline,org/sample/MyBenchmark.testMethod4_thrpt_jmhLoop
+dontinline,org/sample/MyBenchmark.testMethodFOR_avgt_jmhLoop
+dontinline,org/sample/MyBenchmark.testMethodFOR_sample_jmhLoop
+dontinline,org/sample/MyBenchmark.testMethodFOR_ss_jmhStub
+dontinline,org/sample/MyBenchmark.testMethodFOR_thrpt_jmhLoop
 inline,org/openjdk/jmh/infra/Blackhole.clearSinks
 inline,org/sample/MyBenchmark.testMethod1
 inline,org/sample/MyBenchmark.testMethod2
 inline,org/sample/MyBenchmark.testMethod3
 inline,org/sample/MyBenchmark.testMethod4
+inline,org/sample/MyBenchmark.testMethodFOR

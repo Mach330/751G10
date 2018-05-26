@@ -28,6 +28,7 @@ package org.sample;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OperationsPerInvocation;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -36,36 +37,66 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.TimeUnit;
 
 import static java.util.Arrays.stream;
 
 public class MyBenchmark {
 
     public int getRandom(){
-        Random rand = new Random();
 
+        Random rand = new Random();
         return rand.nextInt();
+    }
+
+    public static int isPrime(int n) {
+
+        boolean prime = true;
+        for (long i = 3; i <= Math.sqrt(n); i += 2)
+            if (n % i == 0) {
+                prime = false;
+                break;
+            }
+        if (( n%2 !=0 && prime && n > 2) || n == 2) {
+            return 1;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    @Benchmark
+    @BenchmarkMode(Mode.Throughput)
+    public int[][] testMethodFOR() throws InterruptedException {
+
+        int iValue = 12;
+        int jValue = 10;
+
+        int array1[][] = new int[iValue][jValue];
+
+        for (int i = 0; i < iValue; i++) {
+            for (int j = 0; j < jValue; j++) {
+
+                array1[i][j] = isPrime(getRandom());
+            }
+        }
+        return array1;
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
     public int[][] testMethod1() {
-
-        int iValue = 20000;
-        int jValue = 1000;
+        // 1,600,000
+        int iValue = 12;
+        int jValue = 10;
 
         int array1[][] = new int[iValue][jValue];
-        int random = getRandom();
 
         int[][] doubled2D =
 
-        Arrays.stream(array1)//.parallel()
-                .map(x -> Arrays.stream(x)//.parallel()
-                        .map(y -> {
-                            y = random;
-                            y = (int) Math.sqrt((y)*6);
-                            return 2 * (y+1);
-                        })
+        Arrays.stream(array1).sequential()
+                .map(x -> Arrays.stream(x).sequential()//.parallel()
+                        .map(y -> isPrime(getRandom()))
                         .toArray())
                 .toArray(int[][]::new);
         return doubled2D;
@@ -73,70 +104,61 @@ public class MyBenchmark {
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
-    public void testMethod2() {
+    public int[][] testMethod2() {
 
-        int iValue = 20000;
-        int jValue = 1000;
+        int iValue = 12;
+        int jValue = 10;
 
         int array1[][] = new int[iValue][jValue];
-        int random = getRandom();
+
         int[][] doubled2D =
 
                 Arrays.stream(array1).parallel()
-                        .map(x -> Arrays.stream(x)//.parallel()
-                                .map(y -> {
-                                    y = random;
-                                    y = (int) Math.sqrt((y)*6);
-                                    return 2 * (y+1);
-                                })
+                        .map(x -> Arrays.stream(x).sequential()//.parallel()
+                                .map(y -> isPrime(getRandom()))
                                 .toArray())
                         .toArray(int[][]::new);
+        return doubled2D;
 
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
-    public void testMethod3() {
+    public int[][] testMethod3() {
 
-        int iValue = 20000;
-        int jValue = 1000;
+        int iValue = 12;
+        int jValue = 10;
 
         int array1[][] = new int[iValue][jValue];
-        int random = getRandom();
+
         int[][] doubled2D =
 
-                Arrays.stream(array1)//.parallel()
-                        .map(x -> Arrays.stream(x).parallel()
-                                .map(y -> {
-                                    y = random;
-                                    y = (int) Math.sqrt((y)*6);
-                                    return 2 * (y+1);
-                                })
+                Arrays.stream(array1).sequential()
+                        .map(x -> Arrays.stream(x).parallel()//.parallel()
+                                .map(y -> isPrime(getRandom()))
                                 .toArray())
                         .toArray(int[][]::new);
+        return doubled2D;
 
     }
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
-    public void testMethod4() {
+    public int[][] testMethod4() {
 
-        int iValue = 20000;
-        int jValue = 1000;
+        int iValue = 12;
+        int jValue = 10;
 
         int array1[][] = new int[iValue][jValue];
-        int random = getRandom();
+
         int[][] doubled2D =
 
                 Arrays.stream(array1).parallel()
-                        .map(x -> Arrays.stream(x).parallel()
-                                .map(y -> {
-                                    y = random;
-                                    y = (int) Math.sqrt((y)*6);
-                                    return 2 * (y+1);
-                                })
+                        .map(x -> Arrays.stream(x).parallel()//.parallel()
+                                .map(y -> isPrime(getRandom()))
                                 .toArray())
                         .toArray(int[][]::new);
+        return doubled2D;
 
     }
 
@@ -148,7 +170,8 @@ public class MyBenchmark {
                 .include(MyBenchmark.class.getSimpleName())
                 .forks(1)
                 .warmupIterations(10)
-                .measurementIterations(50)
+                .measurementIterations(100)
+
 
                 .build();
 
