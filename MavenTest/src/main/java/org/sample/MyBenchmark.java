@@ -49,7 +49,7 @@ public class MyBenchmark {
 
     @Benchmark
     @BenchmarkMode(Mode.Throughput)
-    public void testMethod1() {
+    public int[][] testMethod1() {
 
         int iValue = 20000;
         int jValue = 1000;
@@ -64,13 +64,11 @@ public class MyBenchmark {
                         .map(y -> {
                             y = random;
                             y = (int) Math.sqrt((y)*6);
-                            y = (int) Math.sqrt((y)*6);
-                            y = (int) Math.sqrt((y)*6);
                             return 2 * (y+1);
                         })
                         .toArray())
                 .toArray(int[][]::new);
-
+        return doubled2D;
     }
 
     @Benchmark
@@ -88,8 +86,6 @@ public class MyBenchmark {
                         .map(x -> Arrays.stream(x)//.parallel()
                                 .map(y -> {
                                     y = random;
-                                    y = (int) Math.sqrt((y)*6);
-                                    y = (int) Math.sqrt((y)*6);
                                     y = (int) Math.sqrt((y)*6);
                                     return 2 * (y+1);
                                 })
@@ -114,8 +110,6 @@ public class MyBenchmark {
                                 .map(y -> {
                                     y = random;
                                     y = (int) Math.sqrt((y)*6);
-                                    y = (int) Math.sqrt((y)*6);
-                                    y = (int) Math.sqrt((y)*6);
                                     return 2 * (y+1);
                                 })
                                 .toArray())
@@ -138,8 +132,6 @@ public class MyBenchmark {
                         .map(x -> Arrays.stream(x).parallel()
                                 .map(y -> {
                                     y = random;
-                                    y = (int) Math.sqrt((y)*6);
-                                    y = (int) Math.sqrt((y)*6);
                                     y = (int) Math.sqrt((y)*6);
                                     return 2 * (y+1);
                                 })

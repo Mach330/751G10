@@ -1,0 +1,6 @@
+Test is based on Java's Array Streams.
+
+Instead of using a for loop to iterate through arrays, we use an Array Stream.
+With the stream, we are able to specify whether we want to parallelise the stream or not.
+
+Our test setup has a 2D array with a nested stream.
