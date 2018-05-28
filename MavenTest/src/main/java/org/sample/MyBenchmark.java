@@ -96,9 +96,16 @@ public class MyBenchmark {
 
         Arrays.stream(array1).sequential()
                 .map(x -> Arrays.stream(x).sequential()//.parallel()
-                        .map(y -> isPrime(getRandom()))
+                        .map(y -> {
+                            y = getRandom();
+                            y = (int) Math.sqrt((y)*6);
+                            return 2 * (y+1);
+                        })
                         .toArray())
                 .toArray(int[][]::new);
+
+
+
         return doubled2D;
     }
 
@@ -115,7 +122,11 @@ public class MyBenchmark {
 
                 Arrays.stream(array1).parallel()
                         .map(x -> Arrays.stream(x).sequential()//.parallel()
-                                .map(y -> isPrime(getRandom()))
+                                .map(y -> {
+                                    y = getRandom();
+                                    y = (int) Math.sqrt((y)*6);
+                                    return 2 * (y+1);
+                                })
                                 .toArray())
                         .toArray(int[][]::new);
         return doubled2D;
@@ -135,7 +146,11 @@ public class MyBenchmark {
 
                 Arrays.stream(array1).sequential()
                         .map(x -> Arrays.stream(x).parallel()//.parallel()
-                                .map(y -> isPrime(getRandom()))
+                                .map(y -> {
+                                    y = getRandom();
+                                    y = (int) Math.sqrt((y)*6);
+                                    return 2 * (y+1);
+                                })
                                 .toArray())
                         .toArray(int[][]::new);
         return doubled2D;
@@ -155,7 +170,11 @@ public class MyBenchmark {
 
                 Arrays.stream(array1).parallel()
                         .map(x -> Arrays.stream(x).parallel()//.parallel()
-                                .map(y -> isPrime(getRandom()))
+                                .map(y -> {
+                                    y = getRandom();
+                                    y = (int) Math.sqrt((y)*6);
+                                    return 2 * (y+1);
+                                })
                                 .toArray())
                         .toArray(int[][]::new);
         return doubled2D;
